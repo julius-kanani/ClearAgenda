@@ -10,6 +10,7 @@ const Tab = createBottomTabNavigator();
 const AppNavigator: React.FC = () => (
   <Tab.Navigator
     screenOptions={({ route }) => ({
+      headerTitleAlign: 'center',
       tabBarIcon: ({ color, size }) => {
         let iconName: string;
 
@@ -27,8 +28,20 @@ const AppNavigator: React.FC = () => (
       inactiveTintColor: 'gray',
     }}
   >
-    <Tab.Screen name="New Task" component={NewTaskScreen} />
-    <Tab.Screen name="Task List" component={TaskListScreen} />
+    <Tab.Screen 
+      name="New Task" 
+      component={NewTaskScreen} 
+      options={{
+        title: 'Create a new task.',
+      }}
+    />
+    <Tab.Screen 
+      name="Task List" 
+      component={TaskListScreen} 
+      options={{
+        title: 'List saved task items.',
+      }}
+    />
   </Tab.Navigator>
 );
 
