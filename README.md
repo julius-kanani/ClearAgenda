@@ -1,5 +1,5 @@
 # ClearAgenda
-learAgenda is a sleek and intuitive Todo List app designed to help you organize your tasks and manage your daily agenda effortlessly.
+ClearAgenda is a sleek and intuitive Todo List app designed to help you organize your tasks and manage your daily agenda effortlessly.
 
 ## Features
 
